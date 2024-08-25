@@ -1,0 +1,105 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://w0.peakpx.com/wallpaper/431/699/HD-wallpaper-formula-math-texture.jpg");
+}
+
+.container {
+    background: linear-gradient(pink,yellow,aqua,orange,pink);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: colorVibrate 1s infinite;
+    
+    
+}
+
+h1{
+    color: #333;
+    margin-bottom: 20px;
+    animation: colorVibrate 1s infinite;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input:hover{
+    border-radius: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap; 
+    gap: 5px; 
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 18%;
+    box-shadow: bisque;
+
+}
+
+button:hover {
+    background: linear-gradient(pink,orange,red,pink);
+    border-radius: 40%;
+}
+
+#result {
+    margin-top: 20px;
+    color: black;
+    background: linear-gradient(aqua,pink,orange,aqua,yellow);
+    border-radius: 30px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes colorVibrate {
+    0% {
+        background: linear-gradient(pink, yellow, aqua, orange, pink);
+    }
+    25% {
+        background: linear-gradient(yellow, aqua, orange, pink, pink);
+    }
+    50% {
+        background: linear-gradient(aqua, orange, pink, pink, yellow);
+    }
+    75% {
+        background: linear-gradient(orange, pink, pink, yellow, aqua);
+    }
+    100% {
+        background: linear-gradient(pink, yellow, aqua, orange, pink);
+    }
+}
